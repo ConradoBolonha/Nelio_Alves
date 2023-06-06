@@ -14,7 +14,6 @@ elif y == 0 and x >= 1:
     quadrante = 'Eixo X'
 elif x == 0 and y >= 1:
     quadrante = 'Eixo Y'
-# if x == 0 and y == 0:
 else:
     quadrante = 'Origem'
 
