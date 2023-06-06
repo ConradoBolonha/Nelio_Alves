@@ -1,28 +1,21 @@
-### AUMENTO DE SALÁRIO ###
+x = float(input('Valor do eixo X: '))
+y = float(input('Valor do eixo Y: '))
+quadrante = ''
 
-sal = float(input('Valor salário: '))
-vl_novo_sal = ''
-aumento = ''
-porcent = ''
-
-if sal <= 1000:
-	vl_novo_sal = sal * 0.2 + sal
-	aumento = sal * 0.2
-	porcent = 0.20 * 100
-elif sal <= 3000:
-	vl_novo_sal = sal * 0.15 + sal
-	aumento = sal * 0.15
-	porcent = 0.15 * 100
-elif sal <= 8000:
-	vl_novo_sal = sal * 0.1 + sal
-	aumento = sal * 0.1
-	porcent = 0.10 * 100
+if x >= 1 and y >= 1:
+    quadrante = 'Q1'
+elif y >= 1 and x <= -1:
+    quadrante = 'Q2'
+elif x <= -1 and y <= -1:
+    quadrante = 'Q3'
+elif y <= -1 and x >= 0:
+    quadrante = 'Q4'
+elif y == 0 and x >= 1:
+    quadrante = 'Eixo X'
+elif x == 0 and y >= 1:
+    quadrante = 'Eixo Y'
+# if x == 0 and y == 0:
 else:
-	vl_novo_sal = sal * 0.05 + sal
-	aumento = sal * 0.05
-	porcent = 0.05 * 100
+    quadrante = 'Origem'
 
-print(f'Valor salário atual = R$ {sal:.2f}')
-print(f'Valor do aumento = R$ {aumento:.2f}')
-print(f'Valor do novo salário = R$ {vl_novo_sal:.2f}')
-print(f'% de aumento = {porcent:.0f}%')
+print(f'{quadrante}')
