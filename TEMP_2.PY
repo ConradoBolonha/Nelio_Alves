@@ -12,4 +12,3 @@ while linha <= qtdade_linhas:
     linha += 1
     
 print('FIM')
-
