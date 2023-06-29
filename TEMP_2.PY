@@ -1,8 +1,9 @@
-lista = ['Ana', 'Karen', 'Eli', 'Simon', 'Sandra']
-
-nome = input('Nome na lista? ')
-
-if nome in lista:
-    print('Sim, tem esse nome.')
-else:
-    print('Nome não encontrado')
+def soma():
+    n1 = int(input('1º número: '))
+    n2 = int(input('2º número: '))
+    n3 = int(input('3º número: '))
+    soma_1 = n1 + n2
+    soma_2 = n2 + n3
+    print(soma_1)
+    print(soma_2)
+soma()
